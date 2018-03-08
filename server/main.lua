@@ -12,6 +12,7 @@ RegisterServerEvent('esx_holdup:toofar')
 AddEventHandler('esx_holdup:toofar', function(robb)
     local _source = source
     local xPlayer  = ESX.GetPlayerFromId(_source)
+    local xPlayers = ESX.GetPlayers()    
     rob = false
     for i=1, #xPlayers, 1 do
          local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
